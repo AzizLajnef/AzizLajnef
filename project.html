@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to zven's animal shop 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1 id="welcomeHeader" >welcome to zven's animal shop 🐾</h1>
+</header>
+<img src="C:\Users\zveni\Downloads\animal group.jpg" alt="" width="700" height="380">
+<div class="product" id="product1">
+    <img src="C:/Users/zveni/Downloads/floppa.jpg"  alt="" width="333" height="333">
+    <h2>Name : floppa</h2>
+    <h2>Species : caracal</h2>
+    <h2>age : 3 years</h2>
+    <h2> Price : $6999.99</h2>
+    <button onclick="addToCart('floppa','caracal','3 years' ,6999.99 )">Add to Cart</button>
+</div>
+
+<div class="product" id="product2">
+    <img src="C:/Users/zveni/Downloads/dog.jpg"  alt="" width="333" height="333">
+    <h2>poochie</h2>
+    <h2>Species : Rottweiler</h2>
+    <h2>age : 2 years</h2>
+    <h2>Price: $1199.99</h2>
+    <button onclick="addToCart('poochie','Rottweiler','2 years',1199.99 )">Add to Cart</button>
+</div>
+<div class="product" id="product3">
+    <img src="C:/Users/zveni/Downloads/lemur.webp"  alt="" width="333" height="333">
+    <h2>julien</h2>
+    <h2>Species : lemur</h2>
+    <h2>age : 5 months</h2>
+    <h2> Price: $4699.99</h2>
+    <button onclick="addToCart('julien','lemur','5 months', 4699.99 )">Add to Cart</button>
+</div>
+
+<div class="product" id="product4">
+    <img src="C:\Users\zveni\Downloads\black devil fish.webp" alt="" width="333" height="333">
+    <h2>stanley</h2>
+    <h2>Species : black devil fish</h2>
+    <h2>age : 7 months</h2>
+    <h2>Price: $359.99</h2>
+    <button onclick="addToCart('stanley','black devil fish','7 months',359.99)">Add to Cart</button>
+</div>
+
+<div class="product" id="product5">
+    <img src="C:/Users/zveni/Downloads/monkey.webp" alt="" width="333" height="333">
+    <h2>albert</h2>
+    <h2>Species : baboon</h2>
+    <h2>age : 4 years</h2>
+    <h2>Price: $649.99</h2>
+    <button onclick="addToCart('albert','baboon','4 years' ,649.99)">Add to Cart</button>
+</div>
+
+<div id="cart">
+    <h2 id="shopCart">Shopping Cart</h2>
+    <!--
+        this is a list u start it with <ul> and fill it with items like in the example : 
+        <ul> (ul = unordered list)
+            <li>Item 1</li>  (li = list item)
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    -->
+    <ul id="cart-items"></ul>
+    <!-- span is to make some modifications on a small part of the page -->
+    <h2 id="shopCart">Total: $<span id="cart-total">0.00</span></h2>
+</div>
+<h2>For payment and more info please contact :
+ zvenino7@gmail.com
+ +21620408362   
+</h2>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
