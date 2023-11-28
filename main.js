@@ -25,10 +25,12 @@ function updateCartDisplay() {
         cartItemsElement.append(listItem);
     });
     /// li = list item
-
+ ////forEach is a convenient method for iterating over arrays when you need to perform an operation on each element without creating a new array.
     var total = cart.reduce((acc, animal) => acc + animal.price, 0);
     cartTotalElement.text(total.toFixed(2));
-    
+/// An arrow function (=>) in JavaScript is a shorter way to write a function
+///it replaces the tradional function ,brackets syntax with a shorter and simpler syntax
+// it also gets rid of the function name and the return keyword
 }
 
 ///append = add item in the end
